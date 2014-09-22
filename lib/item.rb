@@ -1,15 +1,11 @@
 class Item
 
-	def initialize(dish, quantity = 1)
+	def initialize(dish, quantity)
 		@dish = dish
 		@quantity = quantity
 	end
 
 attr_reader :dish, :quantity
-
-	def multiple_dish
-		dish + dish
-	end
 
 	def total
 		dish.price * quantity

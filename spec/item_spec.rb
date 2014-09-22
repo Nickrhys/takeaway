@@ -2,7 +2,7 @@ require "item"
 
 describe Item do
 
-let (:item) {Item.new(:dish)}
+let (:item) {Item.new(:dish, 1)}
 
 
 
