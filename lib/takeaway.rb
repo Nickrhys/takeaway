@@ -1,12 +1,15 @@
-# class Takeaway
+class Takeaway
 
-# 	def initialize(menu = [])
-# 		@menu = menu		
-# 	end
+	attr_reader :menu
+	attr_accessor :orders
 
-# 	attr_reader :menu
+	def initialize(menu)
+		@menu = menu	
+		@orders ||= []	
+	end
 
-# 	def show_menu
-# 		menu.map { |dish| dish.to_s }
-# 	end
-# end
+	def add(order)
+		orders << order
+	end
+
+end
