@@ -14,4 +14,9 @@ class Order
     	# items.inject(0) { |cost, (item, price)| cost + price }
     	items.map { |item_object| item_object.total }.inject { |acc, element| acc + element }
 	end
+
+	def time_ordered
+		Time.now.round
+	end
+
 end

@@ -4,7 +4,7 @@ require "dish"
 describe Takeaway do
 	
 	let (:takeaway) {Takeaway.new(@menu)							 }
-	let (:order) 	{double :order, total: 14, time_ordered: Time.now }
+	let (:order) 	{double :order, item_total: 14, time_ordered: Time.now.round }
 
 	context 'functionality' do
 

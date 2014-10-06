@@ -6,9 +6,10 @@ describe Order do
 
 	# let(:burger) 	{double :burger, {:price => 4.5} 	}
 	# let(:fries) 	{double :fries, {:price => 2.5}		}
-	let(:item1)		{double :item, total: 4.5					}
-	let(:item2)		{double :item, total: 6					}
-	let(:order)  	{Order.new							}
+	let(:item1)		{double :item, total: 4.5	}
+	let(:item2)		{double :item, total: 6		}
+	let(:order)  	{Order.new								}
+	
 
 	it 'will add line items to the order' do
 		order.add(item1)
@@ -22,4 +23,8 @@ describe Order do
 		expect(order.item_total).to eq 10.5
 	end
 
+
+	it 'will know the time it is ordered' do 
+		expect(order.time_ordered).to eq Time.now.round 
+	end
 end

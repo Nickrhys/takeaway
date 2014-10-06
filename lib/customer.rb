@@ -1,4 +1,4 @@
-class Customer
+	class Customer
 
 	def initialize(name, number)
 		@name = name
