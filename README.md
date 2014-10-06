@@ -16,5 +16,5 @@ How to use
 Clone this repo and cd into the takeaway directory. Open irb or pry in the terminal and type the following command: 
 
 ```
-require ./lib/runtakeaway'
+require './lib/runtakeaway'
 ``` 
